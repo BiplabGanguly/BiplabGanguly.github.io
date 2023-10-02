@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Personal Portfolio Website Design | Codehal</title>
+
+    <!-- box icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+
+  <body>
+    <button class="btn-action" onclick="action()" id="actionbtn"><i class="bx bx-play"></i></button>
+    <audio src="images/music.mp3" id="audio" ></audio>
+    <!-- header design -->
+    <header class="header">
+      <a href="#home" class="logo"><img src="images/SignetureImage.png" alt=""></a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">home</a>
+        <a href="#about">about me</a>
+        <a href="#project">my projects</a>
+        <a href="#contact">contact me</a>
+      </nav>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+          <h3>Hello, It's me..</h3>
+          <h1>Biplab Ganguly</h1>
+          <h3>And I'm a <span>Backend Developer</span></h3>
+          <p>C C++ Python JavaScript Django Django-Rest-FrameWork  React-JS AWS </p>
+             <div class="media">
+              <a href=""><i class="bx bxl-gmail"></i></a>
+              <a href=""><i class="bx bxl-linkedin"></i></a>
+              <a href=""><i class="bx bxl-github"></i></a>
+              <a href=""><i class="bx bxl-stack-overflow"></i></a>
+             </div>
+             <a href="#about" class="btn">more about me</a>
+        </div>
+
+        <div class="home-img">
+          <img src="images/my_home.jpg" alt="">
+        </div>
+    </section>
+    <!-- about section design -->
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/about-me1.jpg" alt="">
+      </div>
+      <div class="about-content">
+        <h2 class="heading">about <span>me</span></h2>
+        <h3>Backend Developer</h3>
+        <p>Hello, I'm <spam class="abouttextname">Biplab</spam>, a passionate backend developer specializing in Django and React.js. With a deep understanding of web development and a keen eye for efficient code, I strive to create robust and scalable applications. My expertise lies in building powerful backend systems using Django, leveraging its extensive ecosystem and its ability to handle complex data models and business logic. Additionally, I have honed my skills in frontend development using React.js, allowing me to craft seamless user experiences and interactive interfaces. Through my projects, I have gained experience in designing RESTful APIs, integrating third-party services, and optimizing application performance. I am constantly exploring new technologies and best practices to stay ahead in the ever-evolving world of web development. I am excited about collaborating with forward-thinking teams and 
+          contributing my skills to create innovative solutions. 
+          Let's connect and build something amazing together!</p>
+          <div class="aboutbtn">
+            <a href="#about" class="btn resumebtn">download resume</a>
+            <a href="#contact" class="btn hirebtn">hire me</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- project section design -->
+    <section class="project" id="project">
+      <h2 class="heading">personal <span>projects</span></h2>
+      <div class="project-container">
+        <div class="project-videos">
+          <video src="images/p1.mp4" type="video/mp4" class="videos" autoplay loop id="v1"></video>
+          <div class="project-layer">
+            <h4>OnShop</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+              Nulla sint debitis alias beatae distinctio natus non libero animi maxime corrupti </p>
+              <div class="links">
+                <a href="">
+                  <i class="bx bx-link-alt"></i>
+                </a>
+                <a href="">
+                  <i class="bx bxl-github"></i>
+                </a>
+              </div>
+          </div>
+        </div>
+        <div class="project-videos">
+            <video src="images/p2.mp4" type="video/mp4" class="videos" autoplay loop id="v2"></video>
+            <div class="project-layer">
+              <h4>Netflix</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Nulla sint debitis alias beatae distinctio natus non libero animi maxime corrupti </p>
+                <div class="links">
+                  <a href="">
+                    <i class="bx bx-link-alt"></i>
+                  </a>
+                  <a href="">
+                    <i class="bx bxl-github"></i>
+                  </a>
+                </div>
+            </div>
+        </div>
+      </div>
+      </section>
+    
+    <!-- contact section design -->
+      <section class="contact" id="contact">
+        <h2 class="heading">contact <span>me</span></h2>
+        <form method="post">
+          <div class="input-box">
+            <input type="text" placeholder="full name..." id="fullname">
+            <input type="email" placeholder="email address..." id="email">
+          </div>
+          <div class="input-box">
+            <input type="text" placeholder="email subject..." class="subject" id="subject">
+          </div>
+          <textarea name = "" id="content" cols="30" rows="10" placeholder="message..."></textarea>
+          <input type="button" value="send message" class="btn"  onclick="sendEmail()">
+        </form>
+      </section>
+    <!-- footer design -->
+<footer class="footer">
+  <div class="connect-box">
+    <div class="signature-img">
+      <img src="images/SignetureImage.png" alt="">
+    </div>
+    <div class="connect">
+        <a href=""><i class="bx bxl-gmail"></i></a>
+        <a href=""><i class="bx bxl-linkedin"></i></a>
+        <a href=""><i class="bx bxl-github"></i></a>
+        <a href=""><i class="bx bxl-stack-overflow"></i></a>
+    </div>
+    <div class="direction">
+      <a href="#home" class="active">home</a>
+      <a href="#about">about me</a>
+      <a href="#project">my projects</a>
+      <a href="#contact">contact me</a>
+    </div>
+  </div>
+    <div class="end-content">
+      <p>
+        copyright &copy; | design by Biplab Ganguly
+      </p>
+    </div> 
+</footer>
+
+    <!-- scroll reveal -->
+    <script src="js/script.js"></script>
+  <!-- typed js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- custom js -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src = "https://smtpjs.com/v3/smtp.js"></script>
+
+  </body>
+</html>
